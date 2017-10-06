@@ -3,6 +3,17 @@ package ExemploFullCal;
 import java.util.Scanner;
 
 public class FuncaoCRetorno {
+    
+    //Não usamos void porque a função vai ter um retorno do tipo double
+    public static double pedirNumero(){
+        Scanner e = new Scanner (System.in);
+        
+        System.out.println("Digite um número: ");
+        double num = e.nextDouble();
+        
+        //retornando o valor digitando o valor double
+        return num;
+}
 
     public static void criarMenu() {
 
@@ -27,6 +38,11 @@ public class FuncaoCRetorno {
         System.out.println("A variavel valor vale: " + valor);
     }
 
+    
+    
+    //remover o sccanner o print e o next
+    //trocar tudo pelo "pedirNumero()"
+    //Armazenar em uma variável nesta função
     public static void calcularDobro() {
         Scanner e = new Scanner(System.in);
         double n, dobro;
